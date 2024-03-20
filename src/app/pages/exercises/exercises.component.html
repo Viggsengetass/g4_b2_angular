@@ -12,13 +12,14 @@
           class="btn btn-danger"
           (click)="increment(-1)"
   >-</button>
-  <p class="counter"
-    [class.yellow]="value === 0"
-    [class.red]="value < 0 && value > -20"
-    [class.red-20]="value <= -20"
-    [class.green]="value > 0 && value < 20"
-    [class.green-20]="value >= 20"
-  >{{ value }}</p>
+<!--  <p class="counter"-->
+<!--    [class.yellow]="value === 0"-->
+<!--    [class.red]="value < 0 && value > -20"-->
+<!--    [class.red-20]="value <= -20"-->
+<!--    [class.green]="value > 0 && value < 20"-->
+<!--    [class.green-20]="value >= 20"-->
+<!--  >{{ value }}</p>-->
+  <p class="counter" [class]="getCssClass()">{{ value }}</p>
   <button type="button"
           class="btn btn-success"
           (click)="increment(1)"

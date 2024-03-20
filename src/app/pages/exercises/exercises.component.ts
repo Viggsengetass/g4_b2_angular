@@ -15,4 +15,12 @@ export class ExercisesComponent {
     this.value += inc;
   }
 
+  getCssClass(): string {
+    if (this.value === 0) return 'yellow';
+    if (this.value <= -20) return 'red-20';
+    if (this.value < 0) return 'red';
+    if (this.value >= 20) return 'green-20';
+    return 'green';
+  }
+
 }
