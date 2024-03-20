@@ -1,1 +1,23 @@
-<p>exercises works!</p>
+<!-- exercises.component.html -->
+<div class="counter-container" [style.background-color]="counterColor">
+  <button class="change-button" (click)="changeCount(-5)">--</button>
+  <button class="change-button" (click)="changeCount(-1)">-</button>
+  <span class="count-display">{{ count }}</span>
+  <button class="change-button" (click)="changeCount(1)">+</button>
+  <button class="change-button" (click)="changeCount(5)">++</button>
+</div>
+
+<!-- Ajoutez ceci à votre fichier HTML -->
+<!-- ... contenu existant pour le compteur ... -->
+
+<!-- Bouton pour lancer les dés -->
+<button class="change-button" (click)="launchDice()">Lancer les dés</button>
+
+<!-- Section pour afficher les résultats des dés -->
+<div *ngIf="diceRolls.length > 0">
+  <h3>Résultats des dés :</h3>
+  <ul>
+    <li *ngFor="let roll of diceRolls">{{ roll }}</li>
+  </ul>
+</div>
+
