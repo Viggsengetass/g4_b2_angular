@@ -11,4 +11,8 @@ export class ExercisesComponent {
 
   value: number = 0;
 
+  increment(inc: number): void {
+    this.value += inc;
+  }
+
 }
