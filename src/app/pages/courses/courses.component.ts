@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import {NgForOf, NgIf} from "@angular/common";
+import {RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-courses',
   standalone: true,
   imports: [
     NgForOf,
-    NgIf
+    NgIf,
+    RouterOutlet
   ],
   templateUrl: './courses.component.html',
   styleUrl: './courses.component.scss'
