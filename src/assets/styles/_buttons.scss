@@ -1,0 +1,9 @@
+
+.btn {
+  background-color: $default-blue;
+  color: $default-yellow;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+  cursor: pointer;
+  border-color: darken($default-blue, 30%);
+}
